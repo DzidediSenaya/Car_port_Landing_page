@@ -36,6 +36,7 @@ a {
     font-size: 30px;
     text-decoration: none;
     color: rgb(250, 249, 249);
+    text-align: left;
 
     font-family: 'Times New Roman', Times, serif;
 }
@@ -165,21 +166,6 @@ img {
     padding: 120px 30px;
 }
 
-
-.sports-cars {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
-
-.products {
-    text-align: center;
-    margin: auto;
-    padding: 120px 30px;
-}
-
 .service-card {
     color: #fffcfc;
 }
@@ -193,6 +179,7 @@ h2 {
 .product-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
@@ -200,4 +187,16 @@ h2 {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+}
+
+
+.services  {
+    width: 30vh;
+    height: 30%;
+}
+
+.logo
+{
+    width: 15vh;
+    height: 15%;
 }
