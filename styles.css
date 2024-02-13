@@ -188,3 +188,16 @@ h2 {
     color: #faf3f3;
     text-align: center;
 }
+
+
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.product-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
