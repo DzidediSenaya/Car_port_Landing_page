@@ -90,14 +90,14 @@ a:hover {
     margin: auto;
 }
 
-.span{
+.span {
     font-family: cursive;
     color: #420703;
     font-size: 34px;
     font-weight: 700;
 }
 
-.about-section{
+.about-section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -139,26 +139,24 @@ a:hover {
 
 .text {
     text-align: left;
-padding: 10px 0;
+    padding: 10px 0;
 }
 
-.text h3
-{
+.text h3 {
     padding: 14px 0;
     color: #0c0b0b;
 }
 
-img
-{
+img {
     width: 100%;
 }
 
-.service-items{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 27px;
-        grid-row-gap: 0px;
+.service-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 27px;
+    grid-row-gap: 0px;
 }
 
 .service-items {
@@ -168,10 +166,25 @@ img
 }
 
 
-.{
+.sports-cars {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.products {
+    text-align: center;
+    margin: auto;
+    padding: 120px 30px;
+}
+
+.service-card {
+    color: #fffcfc;
+}
+
+h2 {
+    color: #faf3f3;
+    text-align: center;
+}
