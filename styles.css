@@ -1,220 +1,53 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Body styles */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #0a0909;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
+/* Header styles */
 .bg {
-    color: #fcf9f9;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/car1.jpg);
-    background-color: #c00909;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    list-style-type: none;
-    padding: 8px;
-}
-
-a {
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(250, 249, 249);
-    text-align: left;
-
-    font-family: 'Times New Roman', Times, serif;
-}
-
-a:hover {
-    padding: 2px 0;
-    border-bottom: 2px solid #eb190a;
-}
-
-.top_items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-    padding: 10px;
-}
-
-.icon {
-    font-family: fantasy;
-    font-weight: bold;
-    color: #fcfafa;
-}
-
-.btn {
-    background: #fc0000;
-    background-image: -webkit-linear-gradient(top, #fc0000, #e60000);
-    background-image: -moz-linear-gradient(top, #fc0000, #e60000);
-    background-image: -ms-linear-gradient(top, #fc0000, #e60000);
-    background-image: -o-linear-gradient(top, #fc0000, #e60000);
-    background-image: linear-gradient(to bottom, #fc0000, #e60000);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #fcf9f9;
-    color: #580404;
-    text-decoration: none;
-}
-
-.header-text {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    color: #ece7e7;
-    padding: 120px 0 30px 0;
-    width: 50%;
-    margin: auto;
 }
 
-.span {
-    font-family: cursive;
-    color: #420703;
-    font-size: 34px;
-    font-weight: 700;
-}
-
+/* About section styles */
 .about-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.about-text {
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 50%;
-    margin: auto;
-    line-height: 22px;
+    background-color: #f2f2f2;
+    padding: 50px 0;
     text-align: center;
 }
 
-.about-text h3 {
-    padding: 12px;
-    font-size: 18px;
-}
-
-.img {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
+/* New item section styles */
 .new-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    background-color: #f5f1f1;
-}
-
-.new_item_text {
-    padding: 50px;
-    color: rgb(250, 249, 249);
-}
-
-.text {
-    text-align: left;
-    padding: 10px 0;
-}
-
-.text h3 {
-    padding: 14px 0;
-    color: #0c0b0b;
-}
-
-img {
-    width: 100%;
-}
-
-.service-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 27px;
-    grid-row-gap: 0px;
-}
-
-.service-items {
-    text-align: center;
-    margin: auto;
-    padding: 120px 30px;
-}
-
-.service-card {
-    color: #fffcfc;
-}
-
-h2 {
-    color: #faf3f3;
-    text-align: center;
-}
-
-.services  {
-    width: 30vh;
-    height: 30%;
-}
-
-.logo
-{
-    width: 15vh;
-    height: 15%;
-}
-
-/* Team Section Styles */
-.team-section {
+    background-color: #fff;
     padding: 50px 0;
     text-align: center;
 }
 
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    margin-top: 30px;
+/* Services section styles */
+.services {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
 }
 
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.team-member h3 {
-    margin-top: 10px;
-}
-
-.team-member p {
-    color: #777;
-}
-
-/* Product Section Styles */
+/* Products section styles */
 .products {
+    background-color: #fff;
     padding: 50px 0;
+    text-align: center;
 }
 
 .product-items {
@@ -224,14 +57,26 @@ h2 {
 }
 
 .product-card {
-    background-color: #f5f5f5;
+    background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.product-card img {
-    max-width: 100%;
-    border-radius: 10px;
+/* Team section styles */
+.team-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
 }
