@@ -1,296 +1,489 @@
-/* Global styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #0a0909;
-}
-
-.bg {
-    color: #f4d9d9;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/car1.jpg);
-    background-color: #c00909;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    list-style-type: none;
-    padding: 8px;
-}
-
-a {
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(250, 249, 249);
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-a:hover {
-    padding: 2px 0;
-    border-bottom: 2px solid #eb190a;
-}
-
-.top_items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-    padding: 10px;
-}
-
-.icon {
-    font-family: fantasy;
-    font-weight: bold;
-    color: #fcfafa;
-}
-
-.btn {
-    background: #fc0000;
-    background-image: -webkit-linear-gradient(top, #fc0000, #e60000);
-    background-image: -moz-linear-gradient(top, #fc0000, #e60000);
-    background-image: -ms-linear-gradient(top, #fc0000, #e60000);
-    background-image: -o-linear-gradient(top, #fc0000, #e60000);
-    background-image: linear-gradient(to bottom, #fc0000, #e60000);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #fcf9f9;
-    color: #580404;
-    text-decoration: none;
-}
-
-.header-text {
-    text-align: center;
-    color: #ece7e7;
-    padding: 120px 0 30px 0;
-    width: 50%;
-    margin: auto;
-}
-
-.span {
-    font-family: cursive;
-    color: #420703;
-    font-size: 34px;
-    font-weight: 700;
-}
-
-.about-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.about-text {
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 50%;
-    margin: auto;
-    line-height: 22px;
-    text-align: center;
-}
-
-.about-text h3 {
-    padding: 12px;
-    font-size: 18px;
-}
-
-.img {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-.img2 {
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-.new-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    background-color: #f5f1f1;
-}
-
-.new_item_text {
-    padding: 50px;
-    color: rgb(250, 249, 249);
-}
-
-.text {
-    text-align: left;
-    padding: 10px 0;
-}
-
-.text h3 {
-    padding: 14px 0;
-    color: #0c0b0b;
-}
-
-img {
-    width: 100%;
-}
-
-.service-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 27px;
-    grid-row-gap: 0px;
-}
-
-.service-items {
-    text-align: center;
-    margin: auto;
-    padding: 120px 30px;
-}
-
-.service-card {
-    color: #fffcfc;
-}
-
-h2 {
-    color: #000000;
-    text-align: center;
-}
-
-.services  {
-    width: 30vh;
-    height: 30%;
-}
-
-.logo
 {
-    width: 15vh;
-    height: 15%;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* Team section styles */
-.team-section {
-    background-color: #f8f8f8;
-    padding: 100px 0;
-    text-align: center;
-    margin-top: 10px; /* Adjusted margin */
-}
+    /* Body styles */
+    body {
+        font-family: fantasy;
+        font-weight: 400;
+        font-size: 20px;
+        color: #0a0909;
+    }
 
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    padding: 0 20px; /* Added padding to the sides */
-    justify-items: center;
-}
+    /* Background styles */
+    .bg {
+        color: #f4d9d9;
+        background-image: url('assets/car1.jpg');
+        background-color: #c00909;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
 
-.team-member {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        /* Centering the navbar */
+    }
 
-.team-member img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-.team-member h3 {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
+    .navbar ul li {
+        margin-left: 20px;
+    }
 
-/* Product section styles */
-.product-items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 0 20px; /* Added padding to the sides */
-}
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
 
-.product-card {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-}
+    .navbar ul li a:hover {
+        color: #ccc;
+    }
 
-.product-card img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 10px;
-}
+    /* Header text styles */
+    .header-text {
+        text-align: center;
+        color: #ece7e7;
+        padding: 120px 0 30px 0;
+        width: 50%;
+        margin: auto;
+    }
 
-.product-name {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
+    .span {
+        font-family: cursive;
+        color: #420703;
+        font-size: 34px;
+        font-weight: 700;
+    }
 
-/* Team section styles */
-.team-section {
-    background-color: #545e86;
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 20px;
-}
+    /* Button styles */
+    .btn {
+        background: #fc0000;
+        background-image: -webkit-linear-gradient(top, #fc0000, #e60000);
+        background-image: -moz-linear-gradient(top, #fc0000, #e60000);
+        background-image: -ms-linear-gradient(top, #fc0000, #e60000);
+        background-image: -o-linear-gradient(top, #fc0000, #e60000);
+        background-image: linear-gradient(to bottom, #fc0000, #e60000);
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-.team-member img {
-    width: 250px;
-    height: 250px; 
-    border-radius: none;
-}
+    .btn:hover {
+        background: #fcf9f9;
+        color: #580404;
+        text-decoration: none;
+    }
 
-footer {
-    background-color: #050120;
-    color: #fff;
-    padding: 20px 0;
-}
+    /* Footer styles */
+    footer {
+        background-color: #050120;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-contact p {
+        margin: 5px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
 
 
-.footer-contact p {
-    margin: 5px 0;
-}
+    .about-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(2, 2, 93);
+    }
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
+    .about-text {
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 50%;
+        margin: auto;
+        line-height: 22px;
+        text-align: center;
+
+    }
+
+
+    .img {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    .new-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        background-color: #f5f1f1;
+    }
+
+    .new_item_text {
+        padding: 50px;
+        color: rgb(70, 1, 1);
+    }
+
+    .text {
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .text h3 {
+        padding: 14px 0;
+        color: #0c0b0b;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+
+    h2 {
+        color: #000000;
+        text-align: center;
+    }
+
+
+    .logo {
+        width: 15vh;
+        height: 15%;
+    }
+
+    /* Team section styles */
+    .team-section {
+        background-color: #f8f8f8;
+        padding: 100px 0;
+        text-align: center;
+        margin-top: 10px;
+        /* Adjusted margin */
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        padding: 0 20px;
+        /* Added padding to the sides */
+        justify-items: center;
+    }
+
+    .team-member {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .team-member img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .team-member h3 {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Product section styles */
+    .product-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 0 20px;
+        /* Added padding to the sides */
+    }
+
+    .product-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #003ef8;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .product-name {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Team section styles */
+    .team-section {
+        background-color: #f1f2f5;
+        padding: 40px 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .team-member img {
+        width: 250px;
+        height: 250px;
+        border-radius: none;
+    }
+
+    footer {
+        background-color: #050120;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .footer-contact p {
+        margin: 5px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Icon styles */
+    .icon {
+        font-family: fantasy;
+        font-style: italic;
+        font-weight: bold;
+        color: #fcfafa;
+        position: absolute;
+        top: 10px;
+        /* Adjusting top position */
+        left: 22px;
+        /* Adjusting left position */
+    }
+
+    /* Order now button styles */
+    .order-now-btn {
+        background: #fc0000;
+        background-image: -webkit-linear-gradient(top, #fcc100, #e60000);
+        background-image: -moz-linear-gradient(top, #fc0000, #e60000);
+        background-image: -ms-linear-gradient(top, #fc0000, #e60000);
+        background-image: -o-linear-gradient(top, #fc0000, #e60000);
+        background-image: linear-gradient(to bottom, #fc0000, #e60000);
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        /* Adjusting top position */
+        right: 10px;
+        /* Adjusting right position */
+    }
+
+    .order-now-btn:hover {
+        background: #fcf9f9;
+        color: #580404;
+        text-decoration: none;
+    }
+
+    /* Product card styles */
+    .product-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #041a5c;
+        transition: transform 0.3s ease;
+        /* Adding transition effect */
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+        /* Zoom effect on hover */
+    }
+
+    /* Stylish View More Button */
+    .view-more-button {
+        background-color: #fc0000;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .view-more-button:hover {
+        background-color: #e60000;
+    }
+
+    .view-more-button:active {
+        transform: translateY(2px);
+    }
+
+    /* Adjust position of Order Now button */
+    .top-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        padding: 20px 10px;
+        /* Increased top padding */
+    }
+
+    /* Move Order Now button slightly to the left */
+    .btn {
+        margin-right: 1cm;
+        /* Adjusted margin to move button to the left */
+    }
+
+
+    /* Enlarge navbar items */
+    .navbar a {
+        font-size: 50px;
+        /* Increased font size for navbar items */
+        padding: 15px 20px;
+        /* Increased padding for navbar items */
+    }
+
+    /* Bring down "Luxury Rides on a Budget" text */
+    .header-text {
+        text-align: center;
+        color: #f6f0f0;
+        padding: 200px 0 20px 0;
+        /* Adjusted padding to bring down the text */
+        width: 50%;
+        margin: auto;
+    }
+
+    Center text */ .new-item {
+        display: flex;
+        justify-content: center;
+        /* Center the items horizontally */
+        align-items: center;
+        width: 80%;
+        /* Reduce the width */
+        margin: auto;
+        /* Center the section */
+        background-color: #f5f1f1;
+        padding: 40px;
+        /* Reduce padding */
+    }
+
+    .new_item_text {
+        flex: 1;
+        /* Take up remaining space */
+        padding: 0 20px;
+        /* Add padding to the left and right */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .img {
+        flex: 1;
+        /* Take up remaining space */
+        height: auto;
+        /* Adjust height */
+    }
+
+        /* Services section styles*/ 
+        .services {
+            background-color: #02113d;
+        } 
+
+        .service-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 27px;
+            grid-row-gap: 0px;
+        }
+
+
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            max-width: 250px;
+            /* Adjust the max-width as needed */
+            margin: auto;
+            /* Center the service card */
+        }
+    
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+    
+        .service-card img {
+            width: 50%;
+            /* Ensure the image fills the container */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    
+        .service-card h3 {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
