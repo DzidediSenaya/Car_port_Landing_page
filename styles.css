@@ -70,31 +70,11 @@
         font-weight: 700;
     }
 
-    /* Button styles */
-    .btn {
-        background: #fc0000;
-        background-image: -webkit-linear-gradient(top, #fc0000, #e60000);
-        background-image: -moz-linear-gradient(top, #fc0000, #e60000);
-        background-image: -ms-linear-gradient(top, #fc0000, #e60000);
-        background-image: -o-linear-gradient(top, #fc0000, #e60000);
-        background-image: linear-gradient(to bottom, #fc0000, #e60000);
-        -webkit-border-radius: 28px;
-        -moz-border-radius: 28px;
-        border-radius: 28px;
-        font-family: Arial;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 10px 20px;
-        text-decoration: none;
-        cursor: pointer;
-    }
+    /*/* Button styles */
+   
 
-    .btn:hover {
-        background: #fcf9f9;
-        color: #580404;
-        text-decoration: none;
-    }
 
+    
     /* Footer styles */
     footer {
         background-color: #050120;
@@ -123,7 +103,8 @@
         padding-top: 120px;
         padding-bottom: 120px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: rgb(2, 2, 93);
+        background-color: white;
+      
     }
 
     .about-text {
@@ -175,7 +156,7 @@
 
 
     h2 {
-        color: #000000;
+        color: #0a0a0a;
         text-align: center;
     }
 
@@ -285,6 +266,7 @@
 
     .footer-contact p {
         margin: 5px 0;
+        height: fit-content;
     }
 
     .footer-bottom {
@@ -294,14 +276,14 @@
 
     /* Icon styles */
     .icon {
-        font-family: fantasy;
-        font-style: italic;
-        font-weight: bold;
+        width: 110px;
+        height: 50px;
         color: #fcfafa;
         position: absolute;
-        top: 10px;
+       top: 5%;
+       border-radius: 10px;
         /* Adjusting top position */
-        left: 22px;
+        left: 30px;
         /* Adjusting left position */
     }
 
@@ -447,22 +429,23 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
-            grid-column-gap: 27px;
+            grid-column-gap: 20px;
             grid-row-gap: 0px;
         }
 
 
         .service-card {
             background-color: #fff;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease;
-            max-width: 250px;
+            max-width: 200px;
             /* Adjust the max-width as needed */
             margin: auto;
             /* Center the service card */
         }
+
     
         .service-card:hover {
             transform: scale(1.05);
@@ -487,3 +470,31 @@
             text-align: center;
             margin-bottom: 20px;
         }
+
+        .btn {
+            background-color: red;
+            background-image: -webkit-linear-gradient(top, red, red);
+            background-image: -moz-linear-gradient(top,red, red);
+            background-image: -ms-linear-gradient(top, red, red);
+            background-image: -o-linear-gradient(top, red, red);
+            background-image: linear-gradient(to bottom, red, red);
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: none;
+          }
+          
+          .btn:hover {
+            background: #f5b1b1;
+            background-image: -webkit-linear-gradient(top, #f5b1b1, #bd1818);
+            background-image: -moz-linear-gradient(top, #f5b1b1, #bd1818);
+            background-image: -ms-linear-gradient(top, #f5b1b1, #bd1818);
+            background-image: -o-linear-gradient(top, #f5b1b1, #bd1818);
+            background-image: linear-gradient(to bottom, #f5b1b1, #bd1818);
+            text-decoration: none;
+          }
