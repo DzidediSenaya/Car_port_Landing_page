@@ -70,9 +70,6 @@
         font-weight: 700;
     }
 
-    /*/* Button styles */
-   
-
 
     
     /* Footer styles */
@@ -212,13 +209,13 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
-        padding: 0 20px;
+        padding: 10px 10px;
         /* Added padding to the sides */
     }
 
     .product-card {
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         overflow: hidden;
         color: #003ef8;
@@ -501,7 +498,7 @@
 
 /* Change the text color of the "Our Services" heading */
 .services h2 {
-    color: #ff0000; /* Change this to the desired text color */
+    color: white;
 }
 
 
@@ -549,3 +546,8 @@
     margin-bottom: 10px; /* Add some space below the logo */
 }
 
+.social-icon {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Optional: Add some space between icons */
+}
