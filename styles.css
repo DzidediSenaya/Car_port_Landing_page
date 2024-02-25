@@ -421,54 +421,28 @@
         .services {
             background-color: #02113d;
         } 
+/* Add this to your existing CSS file or create a new one */
 
-        .service-items {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-            grid-column-gap: 10px;
-            grid-row-gap: 0px;
-        }
+.service-item {
+    margin-bottom: 20px; /* Adjust the margin bottom to control the spacing between service items */
+    padding: 20px; /* Optional: Add padding to service items for better spacing */
+    text-align: center; /* Center align the content within the service item */
+}
 
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content horizontally */
+}
 
-        .service-card {
-            overflow: hidden;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease;
-            max-width: 200px;
-            /* Adjust the max-width as needed */
-            margin: auto;
-            /* Center the service card */
-        }
+.service-card img {
+    width: 80px; /* Adjust the width of the service item images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Adjust the margin bottom to control spacing between image and text */
+}
 
-    
-        .service-card:hover {
-            transform: scale(1.05);
-        }
-    
-        .service-card img {
-            width: 50%;
-            /* Ensure the image fills the container */
-            height: auto;
-            /* Maintain aspect ratio */
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-    
-        .service-card h3 {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-    
-        .services h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
+        
+        
         .btn {
             background-color: red;
             background-image: -webkit-linear-gradient(top, red, red);
