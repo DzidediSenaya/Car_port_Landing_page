@@ -132,7 +132,7 @@
     }
 
     .new_item_text {
-        padding: 50px;
+        padding: 100px;
         color: rgb(70, 1, 1);
     }
 
@@ -426,14 +426,15 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
-            grid-column-gap: 20px;
+            grid-column-gap: 10px;
             grid-row-gap: 0px;
         }
 
 
         .service-card {
+            overflow: hidden;
             background-color: #fff;
-            padding: 25px;
+            padding: 10px;
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease;
