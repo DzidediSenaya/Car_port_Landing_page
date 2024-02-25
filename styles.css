@@ -434,6 +434,7 @@
     margin-bottom: 20px; /* Adjust the margin bottom to control the spacing between service items */
     padding: 20px; /* Optional: Add padding to service items for better spacing */
     text-align: center; /* Center align the content within the service item */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .service-card {
@@ -481,6 +482,7 @@
 /* Change the text color of the "Our Services" heading */
 .services h2 {
     color: white;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
