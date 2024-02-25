@@ -421,7 +421,13 @@
         .services {
             background-color: #02113d;
         } 
-/* Add this to your existing CSS file or create a new one */
+
+
+.service-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Adjust the gap between grid items */
+}
 
 .service-item {
     margin-bottom: 20px; /* Adjust the margin bottom to control the spacing between service items */
