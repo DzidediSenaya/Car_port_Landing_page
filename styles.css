@@ -1,460 +1,472 @@
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: fantasy;
-    font-weight: 400;
-    font-size: 20px;
-    color: #0a0909;
-}
-
-/* Background styles */
-.bg {
-    color: #f4d9d9;
-    background-image: url('assets/car1.jpg');
-    background-color: #c00909;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-/* Navbar styles */
-.navbar {
-    display: flex;
-    justify-content: center;
-    /* Centering the navbar */
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #ccc;
-}
-
-/* Header text styles */
-.header-text {
-    text-align: center;
-    color: #ece7e7;
-    padding: 120px 0 30px 0;
-    width: 50%;
-    margin: auto;
-}
-
-.span {
-    font-family: cursive;
-    color: #420703;
-    font-size: 34px;
-    font-weight: 700;
-}
-
-
-
-/* Footer styles */
-footer {
-    background-color: #050120;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-contact p {
-    margin: 5px 0;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-.about-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
-  
-}
-
-.about-text {
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 50%;
-    margin: auto;
-    line-height: 22px;
-    text-align: center;
-
-}
-
-
-.img {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-.new-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    background-color: #f5f1f1;
-}
-
-.new_item_text {
-    padding: 100px;
-    color: rgb(70, 1, 1);
-}
-
-.text {
-    text-align: left;
-    padding: 10px 0;
-}
-
-.text h3 {
-    padding: 14px 0;
-    color: #0c0b0b;
-}
-
-img {
-    width: 100%;
-}
-
-
-
-h2 {
-    color: #0a0a0a;
-    text-align: center;
-}
-
-
-.logo {
-    width: 18vh;
-    height: 12%;
-}
-
-/* Team section styles */
-.team-section {
-    background-color: #f8f8f8;
-    padding: 100px 0;
-    text-align: center;
-    margin-top: 10px;
-    /* Adjusted margin */
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    padding: 0 20px;
-    /* Added padding to the sides */
-    justify-items: center;
-}
-
-.team-member {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.team-member img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.team-member h3 {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Product section styles */
-.product-items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 10px 10px;
-    /* Added padding to the sides */
-}
-
-.product-card {
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    color: #003ef8;
-}
-
-.product-card img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.product-name {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Team section styles */
-.team-section {
-    background-color: #f1f2f5;
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.team-member img {
-    width: 250px;
-    height: 250px;
-    border-radius: none;
-}
-
-footer {
-    background-color: #050120;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.footer-contact p {
-    margin: 5px 0;
-    height: fit-content;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Icon styles */
-.icon {
-    width: 110px;
-    height: 50px;
-    color: #fcfafa;
-    position: absolute;
-   top: 5%;
-   border-radius: 10px;
-    /* Adjusting top position */
-    left: 30px;
-    /* Adjusting left position */
-}
-
-/* Order now button styles */
-.order-now-btn {
-    background: #fc0000;
-    background-image: -webkit-linear-gradient(top, #fcc100, #e60000);
-    background-image: -moz-linear-gradient(top, #fc0000, #e60000);
-    background-image: -ms-linear-gradient(top, #fc0000, #e60000);
-    background-image: -o-linear-gradient(top, #fc0000, #e60000);
-    background-image: linear-gradient(to bottom, #fc0000, #e60000);
-    -webkit-border-radius: 28px;
-    -moz-border-radius: 28px;
-    border-radius: 28px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    /* Adjusting top position */
-    right: 10px;
-    /* Adjusting right position */
-}
-
-.order-now-btn:hover {
-    background: #fcf9f9;
-    color: #580404;
-    text-decoration: none;
-}
-
-/* Product card styles */
-.product-card {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    color: #041a5c;
-    transition: transform 0.3s ease;
-    /* Adding transition effect */
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-    /* Zoom effect on hover */
-}
-
-/* Stylish View More Button */
-.view-more-button {
-    background-color: #fc0000;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.view-more-button:hover {
-    background-color: #e60000;
-}
-
-.view-more-button:active {
-    transform: translateY(2px);
-}
-
-/* Adjust position of Order Now button */
-.top-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-    padding: 20px 10px;
-    /* Increased top padding */
-}
-
-/* Move Order Now button slightly to the left */
-.btn {
-    margin-right: 1cm;
-    /* Adjusted margin to move button to the left */
-}
-
-
-/* Enlarge navbar items */
-.navbar a {
-    font-size: 50px;
-    /* Increased font size for navbar items */
-    padding: 15px 20px;
-    /* Increased padding for navbar items */
-}
-
-/* Bring down "Luxury Rides on a Budget" text */
-.header-text {
-    text-align: center;
-    color: #f6f0f0;
-    padding: 200px 0 20px 0;
-    /* Adjusted padding to bring down the text */
-    width: 50%;
-    margin: auto;
-}
-
-Center text */ .new-item {
-    display: flex;
-    justify-content: center;
-    /* Center the items horizontally */
-    align-items: center;
-    width: 80%;
-    /* Reduce the width */
-    margin: auto;
-    /* Center the section */
-    background-color: #f5f1f1;
-    padding: 40px;
-    /* Reduce padding */
-}
-
-.new_item_text {
-    flex: 1;
-    /* Take up remaining space */
-    padding: 0 20px;
-    /* Add padding to the left and right */
-    text-align: center;
-    /* Center the text */
-}
-
-.img {
-    flex: 1;
-    /* Take up remaining space */
-    height: auto;
-    /* Adjust height */
-}
-
-    /* Services section styles*/ 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+        font-family: fantasy;
+        font-weight: 400;
+        font-size: 20px;
+        color: #0a0909;
+    }
+
+    /* Background styles */
+    .bg {
+        color: #f4d9d9;
+        background-image: url('assets/car1.jpg');
+        background-color: #c00909;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        /* Centering the navbar */
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin-left: 20px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #ccc;
+    }
+
+    /* Header text styles */
+    .header-text {
+        text-align: center;
+        color: #ece7e7;
+        padding: 120px 0 30px 0;
+        width: 50%;
+        margin: auto;
+    }
+
+    .span {
+        font-family: cursive;
+        color: #420703;
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+
+
+    /* Footer styles */
+    footer {
+        background-color: #050120;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-contact p {
+        margin: 5px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana';
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana';
+    }
+
+
+    .about-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+        background-color: white;
+
+    }
+
+    .about-text {
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 50%;
+        margin: auto;
+        line-height: 22px;
+        text-align: center;
+
+    }
+
+
+    .img {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    .new-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        background-color: #f5f1f1;
+    }
+
+    .new_item_text {
+        padding: 100px;
+        color: rgb(70, 1, 1);
+    }
+
+    .text {
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .text h3 {
+        padding: 14px 0;
+        color: #0c0b0b;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+
+    h2 {
+        color: #0a0a0a;
+        text-align: center;
+    }
+
+
+    .logo {
+        width: 18vh;
+        height: 12%;
+    }
+
+    /* Team section styles */
+    .team-section {
+        background-color: #f8f8f8;
+        padding: 100px 0;
+        text-align: center;
+        margin-top: 10px;
+        /* Adjusted margin */
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        padding: 0 20px;
+        /* Added padding to the sides */
+        justify-items: center;
+    }
+
+    .team-member {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .team-member img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .team-member h3 {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Product section styles */
+    .product-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 10px 10px;
+        /* Added padding to the sides */
+    }
+
+    .product-card {
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #003ef8;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .product-name {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Team section styles */
+    .team-section {
+        background-color: #f1f2f5;
+        padding: 40px 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .team-member img {
+        width: 250px;
+        height: 250px;
+        border-radius: none;
+    }
+
+    footer {
+        background-color: #050120;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .footer-contact p {
+        margin: 5px 0;
+        height: fit-content;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Icon styles */
+    .icon {
+        width: 110px;
+        height: 50px;
+        color: #fcfafa;
+        position: absolute;
+        top: 5%;
+        border-radius: 10px;
+        /* Adjusting top position */
+        left: 30px;
+        /* Adjusting left position */
+    }
+
+    /* Order now button styles */
+    .order-now-btn {
+        background: #fc0000;
+        background-image: -webkit-linear-gradient(top, #fcc100, #e60000);
+        background-image: -moz-linear-gradient(top, #fc0000, #e60000);
+        background-image: -ms-linear-gradient(top, #fc0000, #e60000);
+        background-image: -o-linear-gradient(top, #fc0000, #e60000);
+        background-image: linear-gradient(to bottom, #fc0000, #e60000);
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        /* Adjusting top position */
+        right: 10px;
+        /* Adjusting right position */
+    }
+
+    .order-now-btn:hover {
+        background: #fcf9f9;
+        color: #580404;
+        text-decoration: none;
+    }
+
+    /* Product card styles */
+    .product-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #041a5c;
+        transition: transform 0.3s ease;
+        /* Adding transition effect */
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+        /* Zoom effect on hover */
+    }
+
+    /* Stylish View More Button */
+    .view-more-button {
+        background-color: #fc0000;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .view-more-button:hover {
+        background-color: #e60000;
+    }
+
+    .view-more-button:active {
+        transform: translateY(2px);
+    }
+
+    /* Adjust position of Order Now button */
+    .top-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        padding: 20px 10px;
+        /* Increased top padding */
+    }
+
+    /* Move Order Now button slightly to the left */
+    .btn {
+        margin-right: 1cm;
+        /* Adjusted margin to move button to the left */
+    }
+
+
+    /* Enlarge navbar items */
+    .navbar a {
+        font-size: 50px;
+        /* Increased font size for navbar items */
+        padding: 15px 20px;
+        /* Increased padding for navbar items */
+    }
+
+    /* Bring down "Luxury Rides on a Budget" text */
+    .header-text {
+        text-align: center;
+        color: #f6f0f0;
+        padding: 200px 0 20px 0;
+        /* Adjusted padding to bring down the text */
+        width: 50%;
+        margin: auto;
+    }
+
+    Center text */ .new-item {
+        display: flex;
+        justify-content: center;
+        /* Center the items horizontally */
+        align-items: center;
+        width: 80%;
+        /* Reduce the width */
+        margin: auto;
+        /* Center the section */
+        background-color: #f5f1f1;
+        padding: 40px;
+        /* Reduce padding */
+    }
+
+    .new_item_text {
+        flex: 1;
+        /* Take up remaining space */
+        padding: 0 20px;
+        /* Add padding to the left and right */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .img {
+        flex: 1;
+        /* Take up remaining space */
+        height: auto;
+        /* Adjust height */
+    }
+
+    /* Services section styles*/
     .services {
-            color: white;
-        background-color: #02113d;
-    } 
+        color: white;
+        background-color:#050120;
+        padding-top: 10px;
+    }
 
 
-.service-items {
-display: grid;
-grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-gap: 20px; /* Adjust the gap between grid items */
-}
+    .service-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns with equal width */
+        gap: 20px;
+        /* Adjust the gap between grid items */
+    }
 
-.service-item {
-margin-bottom: 20px; /* Adjust the margin bottom to control the spacing between service items */
-padding: 20px; /* Optional: Add padding to service items for better spacing */
-text-align: center; /* Center align the content within the service item */
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    .service-item {
+        margin-bottom: 20px;
+        /* Adjust the margin bottom to control the spacing between service items */
+        padding: 20px;
+        /* Optional: Add padding to service items for better spacing */
+        text-align: center;
+        /* Center align the content within the service item */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-.service-card {
-display: flex;
-flex-direction: column;
-align-items: center; /* Center align content horizontally */
-}
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center align content horizontally */
+    }
 
-.service-card img {
-width: 80px; /* Adjust the width of the service item images */
-height: auto; /* Maintain aspect ratio */
-margin-bottom: 10px; /* Adjust the margin bottom to control spacing between image and text */
-}
+    .service-card img {
+        width: 80px;
+        /* Adjust the width of the service item images */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-bottom: 10px;
+        /* Adjust the margin bottom to control spacing between image and text */
+    }
 
-    
-    
+
+
     .btn {
         background-color: red;
         background-image: -webkit-linear-gradient(top, red, red);
-        background-image: -moz-linear-gradient(top,red, red);
+        background-image: -moz-linear-gradient(top, red, red);
         background-image: -ms-linear-gradient(top, red, red);
         background-image: -o-linear-gradient(top, red, red);
         background-image: linear-gradient(to bottom, red, red);
@@ -467,9 +479,9 @@ margin-bottom: 10px; /* Adjust the margin bottom to control spacing between imag
         padding: 10px 20px 10px 20px;
         text-decoration: none;
         border: none;
-      }
-      
-      .btn:hover {
+    }
+
+    .btn:hover {
         background: #f5b1b1;
         background-image: -webkit-linear-gradient(top, #f5b1b1, #bd1818);
         background-image: -moz-linear-gradient(top, #f5b1b1, #bd1818);
@@ -477,61 +489,90 @@ margin-bottom: 10px; /* Adjust the margin bottom to control spacing between imag
         background-image: -o-linear-gradient(top, #f5b1b1, #bd1818);
         background-image: linear-gradient(to bottom, #f5b1b1, #bd1818);
         text-decoration: none;
-      }
+    }
 
-/* Change the text color of the "Our Services" heading */
-.services h2 {
-color: white;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    /* Change the text color of the "Our Services" heading */
+    .services h2 {
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
 
-/* Header text styles with CSS animation */
-.header-text h1 {
-position: relative;
-animation: moveText 5s infinite alternate;
-}
+    /* Header text styles with CSS animation */
+    .header-text h1 {
+        position: relative;
+        animation: moveText 5s infinite alternate;
+    }
 
-@keyframes moveText {
-from {
-    transform: translateX(-50%);
-}
-to {
-    transform: translateX(50%);
-}
-}
+    @keyframes moveText {
+        from {
+            transform: translateX(-50%);
+        }
 
-/* New items section */
-.new-item {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 80%;
-margin: auto;
-background-color: #f5f1f1;
-padding: 40px;
-}
+        to {
+            transform: translateX(50%);
+        }
+    }
 
-.new_item_text {
-flex: 1;
-padding: 0 20px;
-text-align: center;
-}
+    /* New items section */
+    .new-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        background-color: #f5f1f1;
+        padding: 40px;
+    }
 
-.img {
-flex: 1;
-height: auto;
-}
+    .new_item_text {
+        flex: 1;
+        padding: 0 20px;
+        text-align: center;
+    }
 
-/* Adjust footer logo size */
-.footer-logo {
-width: 100px; /* Adjust size as needed */
-height: auto;
-margin-bottom: 10px; /* Add some space below the logo */
-}
+    .img {
+        flex: 1;
+        height: auto;
+    }
 
-.social-icon {
-width: 30px; /* Adjust the width as needed */
-height: auto; /* Maintain aspect ratio */
-margin-right: 10px; /* Optional: Add some space between icons */
-}
+    /* Adjust footer logo size */
+    .footer-logo {
+        width: 100px;
+        /* Adjust size as needed */
+        height: auto;
+        margin-bottom: 10px;
+        /* Add some space below the logo */
+    }
+
+    
+    .social-icon1 {
+        width: 27px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Optional: Add some space between icons */
+        border-radius: 10px;
+    }
+
+    .social-icon2 {
+        width: 29.8px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Optional: Add some space between icons */
+        border-radius: 10px;
+    }
+
+    .social-icon {
+        width: 30px;
+        /* Adjust the width as needed */
+        height: 30px;
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Optional: Add some space between icons */
+        border-radius: 10px;
+        margin-top: 3px ;
+    }
