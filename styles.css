@@ -70,9 +70,6 @@ body {
     font-weight: 700;
 }
 
-/*/* Button styles */
-
-
 
 
 /* Footer styles */
@@ -135,7 +132,7 @@ footer {
 }
 
 .new_item_text {
-    padding: 50px;
+    padding: 100px;
     color: rgb(70, 1, 1);
 }
 
@@ -162,8 +159,8 @@ h2 {
 
 
 .logo {
-    width: 15vh;
-    height: 15%;
+    width: 18vh;
+    height: 12%;
 }
 
 /* Team section styles */
@@ -212,13 +209,13 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    padding: 0 20px;
+    padding: 10px 10px;
     /* Added padding to the sides */
 }
 
 .product-card {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     color: #003ef8;
@@ -422,55 +419,38 @@ Center text */ .new-item {
 
     /* Services section styles*/ 
     .services {
+            color: white;
         background-color: #02113d;
     } 
 
-    .service-items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 0px;
-    }
 
+.service-items {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+gap: 20px; /* Adjust the gap between grid items */
+}
 
-    .service-card {
-        background-color: #fff;
-        padding: 25px;
-        border-radius: 10px;
-        text-align: center;
-        transition: transform 0.3s ease;
-        max-width: 200px;
-        /* Adjust the max-width as needed */
-        margin: auto;
-        /* Center the service card */
-    }
+.service-item {
+margin-bottom: 20px; /* Adjust the margin bottom to control the spacing between service items */
+padding: 20px; /* Optional: Add padding to service items for better spacing */
+text-align: center; /* Center align the content within the service item */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.service-card {
+display: flex;
+flex-direction: column;
+align-items: center; /* Center align content horizontally */
+}
 
-    .service-card:hover {
-        transform: scale(1.05);
-    }
+.service-card img {
+width: 80px; /* Adjust the width of the service item images */
+height: auto; /* Maintain aspect ratio */
+margin-bottom: 10px; /* Adjust the margin bottom to control spacing between image and text */
+}
 
-    .service-card img {
-        width: 50%;
-        /* Ensure the image fills the container */
-        height: auto;
-        /* Maintain aspect ratio */
-        border-radius: 10px;
-        margin-bottom: 15px;
-    }
-
-    .service-card h3 {
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 10px;
-    }
-
-    .services h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
+    
+    
     .btn {
         background-color: red;
         background-image: -webkit-linear-gradient(top, red, red);
@@ -501,7 +481,8 @@ Center text */ .new-item {
 
 /* Change the text color of the "Our Services" heading */
 .services h2 {
-color: #ff0000; /* Change this to the desired text color */
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -549,3 +530,8 @@ height: auto;
 margin-bottom: 10px; /* Add some space below the logo */
 }
 
+.social-icon {
+width: 30px; /* Adjust the width as needed */
+height: auto; /* Maintain aspect ratio */
+margin-right: 10px; /* Optional: Add some space between icons */
+}
