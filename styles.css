@@ -501,7 +501,7 @@ Center text */ .new-item {
 
 /* Change the text color of the "Our Services" heading */
 .services h2 {
-color: #f8f4f4; /* Change this to the desired text color */
+color: #ff0000; /* Change this to the desired text color */
 }
 
 
@@ -548,3 +548,4 @@ width: 100px; /* Adjust size as needed */
 height: auto;
 margin-bottom: 10px; /* Add some space below the logo */
 }
+
