@@ -576,3 +576,125 @@
         border-radius: 10px;
         margin-top: 3px ;
     }
+
+
+/* For mobile devices, adjust layout */
+@media (max-width: 767px) {
+    /* Adjust Navbar */
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    /* Reduce font size for better visibility */
+    .navbar a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /* Make the header text fit on small screens */
+    .header-text {
+        font-size: 18px;
+        padding: 80px 0 10px;
+        width: 90%;
+    }
+
+    /* Adjust image section for smaller devices */
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Product and Service sections: single-column layout */
+    .product-items, .service-items {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust product card size */
+    .product-card {
+        padding: 10px;
+    }
+
+    /* Make team section display in a single column */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduce team member card size */
+    .team-member {
+        padding: 10px;
+        height: auto;
+    }
+
+    /* Footer adjustments */
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* For tablets, use a medium breakpoint */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar a {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .header-text {
+        font-size: 24px;
+        padding: 100px 0 20px;
+        width: 75%;
+    }
+
+    /* Product and service sections: two columns */
+    .product-items, .service-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Adjust team section to two columns */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Larger desktops */
+@media (min-width: 1024px) {
+    .navbar a {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    /* Allow product and service sections to expand */
+    .product-items, .service-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Keep team section at multiple columns */
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Styling adjustments for responsive images */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Full-width sections for small screens */
+.new-item {
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Responsive Order button */
+.order-now-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+/* View More button adjustment */
+.view-more-button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
