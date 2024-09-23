@@ -578,6 +578,7 @@
     }
 
 
+/* Media Queries*/
 /* For mobile devices, adjust layout */
 @media (max-width: 767px) {
     /* Adjust Navbar */
@@ -629,6 +630,19 @@
     footer .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+
+         .new-item {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        background-color: #f5f1f1;
+    }
+
+    .new_item_text {
+        padding: 70px;
+        color: rgb(70, 1, 1);
     }
 }
 
