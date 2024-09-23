@@ -114,7 +114,6 @@ footer {
 .new-item { 
     display: flex;
     flex-direction: column; /* Stack text above the grid */
-    justify-content: center; /* Center the items horizontally */
     align-items: center;
     width: 80%; /* Reduce the width */
     margin: auto; /* Center the section */
@@ -123,19 +122,21 @@ footer {
 }
 
 .new_item_text {
-    flex: 1; /* Take up remaining space */
     padding: 0 20px; /* Add padding to the left and right */
     text-align: center; /* Center the text */
 }
 
+/* Image container */
 .img-container {
-    display: grid; /* Use grid for images */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
     gap: 20px; /* Space between images */
-    padding: 20px; /* Padding around the grid */
+    padding: 20px; /* Padding around the container */
 }
 
 .img {
+    width: 100%; /* Full width */
     display: flex;
     justify-content: center; /* Center images */
     align-items: center; /* Center images vertically */
@@ -156,7 +157,7 @@ footer {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
     grid-gap: 20px;
     padding: 0 20px; /* Added padding to the sides */
     justify-items: center;
@@ -295,7 +296,7 @@ footer {
 /* Responsive Media Queries */
 @media (max-width: 1200px) {
     .product-items {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
 
     .team-grid {
@@ -320,23 +321,21 @@ footer {
     }
 
     .product-items {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-columns: 1fr; /* Stack product items vertically */
     }
 
     .team-grid {
-        grid-template-columns: 1fr; /* 1 column for small screens */
+        grid-template-columns: 1fr; /* Stack team members vertically */
     }
 
     .new-item {
         padding: 20px; /* Adjust padding */
         width: 95%; /* Increase width */
     }
-}
 
-@media (max-width: 500px) {
-    .order-now-btn {
-        font-size: 16px; /* Adjust font size */
-        padding: 8px 16px; /* Adjust padding */
+    .img-container {
+        flex-direction: column; /* Stack images vertically */
+        gap: 10px; /* Adjust space between images */
     }
 
     .view-more-button {
