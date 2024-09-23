@@ -592,20 +592,34 @@
 
 
 /* Media Queries */
-/* For mobile devices, adjust layout */
+/* Base Styles */
+.new-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: #f5f1f1;
+}
+
+.new_item_text {
+    padding: 100px;
+    color: rgb(70, 1, 1);
+    overflow: hidden;
+}
+
+/* For mobile devices */
 @media (max-width: 767px) {
-    /* Adjust Navbar */
+    /* Navbar adjustments */
     .navbar ul {
         flex-direction: column;
     }
 
-    /* Reduce font size for better visibility */
     .navbar a {
         font-size: 20px;
         padding: 10px;
     }
 
-    /* Make the header text fit on small screens */
+    /* Header text */
     .header-text {
         font-size: 18px;
         padding: 80px 0 10px;
@@ -613,40 +627,42 @@
         margin: 0 auto; /* Centering the header */
     }
 
-    /* Adjust image section for smaller devices */
+    /* New item section adjustments */
+    .new-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .new_item_text {
+        padding: 20px; /* Reduced padding */
+        text-align: center; /* Center text */
+    }
+
     .img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Full width for images */
+        margin: 10px 0; /* Margin between images */
     }
 
-    /* Product and Service sections: single-column layout */
-    .product-items, .service-items {
-        grid-template-columns: 1fr;
-    }
-
-    /* Adjust product card size */
-    .product-card {
-        padding: 10px;
-    }
-
-    /* Make team section display in a single column */
+    /* Other sections */
+    .product-items,
+    .service-items,
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout */
     }
 
-    /* Reduce team member card size */
+    .product-card,
     .team-member {
-        padding: 10px;
-        height: auto;
+        padding: 10px; /* Padding for cards */
+        height: auto; /* Flexible height */
     }
 
-    /* Footer adjustments */
     footer .footer-content {
         flex-direction: column;
         text-align: center;
     }
+}
 
-/* For tablets, use a medium breakpoint */
+/* For tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
     .navbar a {
         font-size: 30px;
@@ -656,18 +672,27 @@
     .header-text {
         font-size: 24px;
         padding: 100px 0 20px;
-        width: 75%;
-        margin: 0 auto; /* Centering the header */
+        width: 75%; /* Centering the header */
     }
 
-    /* Product and service sections: two columns */
-    .product-items, .service-items {
-        grid-template-columns: repeat(2, 1fr);
+    /* New item section adjustments */
+    .new-item {
+        flex-direction: row; /* Align items in a row */
     }
 
-    /* Adjust team section to two columns */
+    .new_item_text {
+        padding: 50px; /* Reduce padding for medium devices */
+    }
+
+    .img {
+        width: 48%; /* Two images side by side */
+    }
+
+    /* Other sections */
+    .product-items,
+    .service-items,
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
     }
 }
 
@@ -679,13 +704,13 @@
     }
 
     /* Allow product and service sections to expand */
-    .product-items, .service-items {
-        grid-template-columns: repeat(3, 1fr);
+    .product-items,
+    .service-items {
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
     }
 
-    /* Keep team section at multiple columns */
     .team-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
     }
 }
 
@@ -695,44 +720,17 @@ img {
     height: auto;
 }
 
-/* Full-width sections for small screens */
-.new-item {
-    flex-direction: column;
-    width: 100%; /* Ensure full width */
-}
-
 /* Responsive Order button */
-.order-now-btn {
-    font-size: 16px;
-    padding: 8px 16px;
-}
-
-/* View More button adjustment */
+.order-now-btn,
 .view-more-button {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Responsive padding */
 }
 
-/* Media Queries for responsiveness */
+/* General padding adjustments for different screen sizes */
 @media (max-width: 1200px) {
     .new_item_text {
         padding: 50px; /* Reduce padding for medium devices */
-    }
-}
-
-@media (max-width: 768px) {
-    .new-item {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center; /* Center items */
-    }
-    
-    .new_item_text {
-        padding: 20px; /* Further reduce padding for mobile devices */
-        text-align: center; /* Center text for mobile */
-    }
-
-    .img {
-        margin: 10px 0; /* Add margin between images */
     }
 }
 
