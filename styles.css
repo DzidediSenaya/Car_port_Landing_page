@@ -123,18 +123,9 @@
 
     }
 
-
-    .img {
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-    }
-
-   .new-item { 
+.new-item { 
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    align-items: center;
+    flex-direction: column; /* Stack text above the grid */
     width: 100%;
     margin: auto;
     background-color: #f5f1f1;
@@ -144,11 +135,17 @@
     padding: 100px; /* Large padding for larger screens */
     color: rgb(70, 1, 1);
     overflow: hidden;
-    flex: 1; /* Allow it to grow and take available space */
+    text-align: center; /* Center the text */
+}
+
+.img-container {
+    display: grid; /* Use grid for images */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between images */
+    padding: 20px; /* Padding around the grid */
 }
 
 .img {
-    flex: 1; /* Each image div will take equal space */
     display: flex;
     justify-content: center; /* Center images */
     align-items: center; /* Center images vertically */
