@@ -129,6 +129,7 @@
     width: 100%;
     background-color: #f5f1f1;
     text-align: center;
+    margin: auto;
 }
 
 .new_item_text {
