@@ -131,19 +131,33 @@
         width: 100vw;
     }
 
-    .new-item {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-        background-color: #f5f1f1;
-    }
+   .new-item { 
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: #f5f1f1;
+}
 
-    .new_item_text {
-        padding: 100px;
-        color: rgb(70, 1, 1);
-        overflow: hidden;
-    }
+.new_item_text {
+    padding: 100px; /* Large padding for larger screens */
+    color: rgb(70, 1, 1);
+    overflow: hidden;
+    flex: 1; /* Allow it to grow and take available space */
+}
+
+.img {
+    flex: 1; /* Each image div will take equal space */
+    display: flex;
+    justify-content: center; /* Center images */
+    align-items: center; /* Center images vertically */
+}
+
+.img img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
 
     .text {
         text-align: left;
@@ -154,12 +168,6 @@
         padding: 14px 0;
         color: #0c0b0b;
     }
-
-    img {
-        width: 100%;
-    }
-
-
 
     h2 {
         color: #0a0a0a;
@@ -641,20 +649,6 @@
         text-align: center;
     }
 
-    .new-item {
-        display: flex;
-        align-items: center;
-        width: 100%; /* Ensure full width */
-        margin: auto;
-        background-color: #f5f1f1;
-    }
-
-    .new_item_text {
-        padding: 70px;
-        color: rgb(70, 1, 1);
-    }
-}
-
 /* For tablets, use a medium breakpoint */
 @media (min-width: 768px) and (max-width: 1023px) {
     .navbar a {
@@ -720,4 +714,41 @@ img {
 .view-more-button {
     font-size: 16px;
     padding: 10px 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .new_item_text {
+        padding: 50px; /* Reduce padding for medium devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .new-item {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+    
+    .new_item_text {
+        padding: 20px; /* Further reduce padding for mobile devices */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .img {
+        margin: 10px 0; /* Add margin between images */
+    }
+}
+
+@media (max-width: 480px) {
+    .new_item_text {
+        padding: 10px; /* Minimal padding for very small devices */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .text p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
 }
