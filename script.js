@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        const menu = document.getElementById('nav-menu');
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+    const headerText = document.getElementById('header-text');
+
+    menuToggle.addEventListener('click', function() {
         menu.classList.toggle('active');
-        console.log('Menu toggle clicked!');
+        // Toggle the header class based on menu state
+        if (menu.classList.contains('active')) {
+            headerText.classList.add('header-hidden'); // Hide header when menu is active
+        } else {
+            headerText.classList.remove('header-hidden'); // Show header when menu is not active
+        }
     });
 });
