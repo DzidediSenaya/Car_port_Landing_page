@@ -61,7 +61,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: black;
+    color: grey;
     font-weight: medium;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .btn {
     background-color: #007bff;
-    color: white;
+    color: red;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -103,6 +103,10 @@ body {
         margin: auto;
         overflow: hidden;
     }
+
+.header-hidden {
+    display: none; /* Hides the header */
+}
 
     .span {
         font-family: cursive;
