@@ -1,8 +1,11 @@
-// Dropdown toggle for luxury heading
+// script.js
+
+// Dropdown toggle for the luxury heading
 const dropdownToggle = document.getElementById('dropdown-toggle');
 const dropdownMenu = document.getElementById('dropdown-menu');
 const luxuryHeading = document.getElementById('luxury-heading');
 
+// Show or hide the dropdown menu
 dropdownToggle.addEventListener('click', () => {
     dropdownMenu.classList.toggle('show');
     
