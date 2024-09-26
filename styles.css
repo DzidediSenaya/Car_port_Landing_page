@@ -700,13 +700,8 @@ body {
         margin: 0 auto; /* Centers the header */
     }
 
-    #luxury-heading {
-        display: block; /* Ensure it displays by default */
-    }
-
-    /* Hide luxury heading when menu is open */
-    body.menu-open #luxury-heading {
-        display: none; /* Hides the header when menu is open */
+         #luxury-heading {
+        transform: translateY(60%); /* Shift the heading down by 60% */
     }
 
     /* New item section adjustments */
