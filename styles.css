@@ -61,7 +61,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: grey;
+    color: gray;
     font-weight: medium;
 }
 
@@ -103,10 +103,6 @@ body {
         margin: auto;
         overflow: hidden;
     }
-
-.header-hidden {
-    display: none; /* Hides the header */
-}
 
     .span {
         font-family: cursive;
@@ -695,6 +691,10 @@ body {
         width: 90%;
         margin: 0 auto; /* Centering the header */
     }
+
+ #luxury-heading {
+    display: none; /* Hides the header */
+}
 
     /* New item section adjustments */
     .new-item {
