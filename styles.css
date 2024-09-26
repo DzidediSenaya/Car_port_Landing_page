@@ -701,7 +701,7 @@ body {
     }
 
          #luxury-heading {
-        transform: translateY(60%); /* Shift the heading down by 60% */
+        transform: translateY(200%); /* Shift the heading down by 60% */
     }
 
     /* New item section adjustments */
