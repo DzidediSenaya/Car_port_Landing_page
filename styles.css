@@ -649,6 +649,23 @@ body {
 
 /* Media Queries */
 
+/* Base Styles */
+.new-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: #f5f1f1;
+}
+
+.new_item_text {
+    padding: 100px;
+    color: rgb(70, 1, 1);
+    overflow: hidden;
+}
+
+/* Media Queries */
+
 /* Mobile Devices */
 @media (max-width: 767px) {
     .nav-menu {
@@ -679,10 +696,17 @@ body {
         font-size: 18px;
         padding: 80px 0 10px;
         width: 90%; /* Centering the header */
+        max-width: 90%; /* Ensures it doesn’t exceed 90% */
+        margin: 0 auto; /* Centers the header */
     }
 
     #luxury-heading {
-        display: none; /* Hides the header */
+        display: block; /* Ensure it displays by default */
+    }
+
+    /* Hide luxury heading when menu is open */
+    body.menu-open #luxury-heading {
+        display: none; /* Hides the header when menu is open */
     }
 
     /* New item section adjustments */
@@ -694,6 +718,9 @@ body {
     .new_item_text {
         padding: 20px; /* Reduced padding */
         text-align: center; /* Center text */
+        width: 80%; /* Ensures the text takes 80% of the container */
+        max-width: 800px; /* Optional: limits the width for larger devices */
+        margin: 0 auto; /* Centers the item text */
     }
 
     .img {
@@ -706,6 +733,8 @@ body {
     .service-items,
     .team-grid {
         grid-template-columns: 1fr; /* Single column layout */
+        width: 80%; /* Ensures these sections also cover 80% */
+        margin: 0 auto; /* Centers the sections */
     }
 
     .product-card,
@@ -740,6 +769,8 @@ body {
 
     .new_item_text {
         padding: 50px; /* Reduce padding for medium devices */
+        width: 80%; /* Ensures the text takes 80% of the container */
+        margin: 0 auto; /* Centers the item text */
     }
 
     .img {
@@ -751,6 +782,8 @@ body {
     .service-items,
     .team-grid {
         grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+        width: 80%; /* Ensures these sections also cover 80% */
+        margin: 0 auto; /* Centers the sections */
     }
 }
 
