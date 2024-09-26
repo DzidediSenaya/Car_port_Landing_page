@@ -24,36 +24,71 @@
         width: 100vw;
     }
 
+
     /* Navbar styles */
-    .navbar {
-        display: flex;
-        justify-content: center;
-        /* Centering the navbar */
-    }
 
-    .navbar ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .navbar ul li {
-        margin-left: 20px;
-    }
+body {
+    font-family: Arial, sans-serif;
+}
 
-    .navbar ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.2rem;
-        transition: color 0.3s ease;
-    }
+.navbar-header {
+    background-color: #f3f3f3;
+    border-bottom: 4px solid #333;
+    padding: 10px;
+}
 
-    .navbar ul li a:hover {
-        color: #ccc;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
 .marquee {
     white-space: nowrap; /* Prevent line breaks in the marquee */
@@ -610,17 +645,32 @@
     overflow: hidden;
 }
 
-/* For mobile devices */
-@media (max-width: 767px) {
-    /* Navbar adjustments */
-    .navbar ul {
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
         flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        border-top: 4px solid #333;
     }
 
-    .navbar a {
-        font-size: 20px;
-        padding: 10px;
+    .nav-menu.active {
+        display: flex;
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+/* For mobile devices */
+@media (max-width: 767px) {
 
     /* Header text */
     .header-text {
