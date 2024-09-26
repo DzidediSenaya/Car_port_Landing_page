@@ -632,7 +632,6 @@ body {
     }
 
 
-/* Media Queries */
 /* Base Styles */
 .new-item {
     display: flex;
@@ -648,7 +647,10 @@ body {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -661,7 +663,7 @@ body {
     }
 
     .nav-menu.active {
-        display: flex;
+        display: flex; /* Shows the menu when active */
     }
 
     .menu-toggle {
@@ -669,23 +671,19 @@ body {
     }
 
     .btn {
-        display: none;
+        display: none; /* Hides button on mobile */
     }
-}
-/* For mobile devices */
-@media (max-width: 767px) {
 
-    /* Header text */
+    /* Header text adjustments */
     .header-text {
         font-size: 18px;
         padding: 80px 0 10px;
-        width: 90%;
-        margin: 0 auto; /* Centering the header */
+        width: 90%; /* Centering the header */
     }
 
- #luxury-heading {
-    display: none; /* Hides the header */
-}
+    #luxury-heading {
+        display: none; /* Hides the header */
+    }
 
     /* New item section adjustments */
     .new-item {
@@ -722,7 +720,7 @@ body {
     }
 }
 
-/* For tablets */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
     .navbar a {
         font-size: 30px;
@@ -756,7 +754,7 @@ body {
     }
 }
 
-/* Larger desktops */
+/* Larger Desktops */
 @media (min-width: 1024px) {
     .navbar a {
         font-size: 40px;
@@ -765,16 +763,13 @@ body {
 
     /* Allow product and service sections to expand */
     .product-items,
-    .service-items {
-        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
-    }
-
+    .service-items,
     .team-grid {
         grid-template-columns: repeat(3, 1fr); /* Three-column layout */
     }
 }
 
-/* Styling adjustments for responsive images */
+/* Responsive Image Styling */
 img {
     width: 100%;
     height: auto;
@@ -787,7 +782,7 @@ img {
     padding: 8px 16px; /* Responsive padding */
 }
 
-/* General padding adjustments for different screen sizes */
+/* General padding adjustments */
 @media (max-width: 1200px) {
     .new_item_text {
         padding: 50px; /* Reduce padding for medium devices */
