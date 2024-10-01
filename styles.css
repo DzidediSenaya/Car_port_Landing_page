@@ -62,7 +62,7 @@ body {
 .nav-menu a {
     text-decoration: none;
     color: gray;
-    font-weight: medium;
+    font-weight: 100px;
 }
 
 .nav-menu a:hover {
@@ -761,7 +761,7 @@ body {
     }
 
         .view-more-button {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 
