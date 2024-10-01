@@ -759,6 +759,10 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+        .view-more-button {
+        margin-bottom: 20px;
+    }
 }
 
 /* Tablets */
