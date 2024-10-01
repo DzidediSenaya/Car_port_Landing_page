@@ -683,7 +683,7 @@ body {
     .nav-menu a {
     text-decoration: none;
     color: gray;
-    font-weight: small;
+    font-weight: 50px;
 }
 
 .nav-menu a:hover {
@@ -698,9 +698,6 @@ body {
         display: block;
     }
 
-    .btn {
-        display: none; /* Hides button on mobile */
-    }
 
     /* Marquee and luxury heading adjustments */
     .marquee {
@@ -747,7 +744,6 @@ body {
         grid-template-columns: 1fr; /* Single column layout */
         width: 80%; /* Ensures these sections also cover 80% */
         margin: 0 auto; /* Centers the sections */
-        margin-bottom: 10px;
     }
 
     .product-card,
