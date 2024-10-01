@@ -677,6 +677,7 @@ body {
         background-color: #fff;
         width: 100%;
         border-top: 4px solid #333;
+        z-index: 1000; 
     }
 
     .nav-menu.active {
@@ -689,6 +690,12 @@ body {
 
     .btn {
         display: none; /* Hides button on mobile */
+    }
+
+    /* Marquee and luxury heading adjustments */
+    .marquee {
+        margin-top: 60px; /* Pushes marquee below the menu */
+        z-index: 1; /* Ensures it stays below the menu */
     }
 
     /* Header text adjustments */
