@@ -62,7 +62,7 @@ body {
 .nav-menu a {
     text-decoration: none;
     color: gray;
-    font-weight: 100px;
+    font-weight: normal;
 }
 
 .nav-menu a:hover {
@@ -683,7 +683,7 @@ body {
     .nav-menu a {
     text-decoration: none;
     color: gray;
-    font-weight: 50px;
+    font-weight: 50;
 }
 
 .nav-menu a:hover {
