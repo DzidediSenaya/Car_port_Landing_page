@@ -698,6 +698,9 @@ body {
         display: block;
     }
 
+        .btn {
+        display: none; /* Hides button on mobile */
+    }
 
     /* Marquee and luxury heading adjustments */
     .marquee {
