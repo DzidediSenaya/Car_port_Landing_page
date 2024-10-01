@@ -680,6 +680,16 @@ body {
         z-index: 1000; 
     }
 
+    .nav-menu a {
+    text-decoration: none;
+    color: gray;
+    font-weight: small;
+}
+
+.nav-menu a:hover {
+    color: red;
+}
+
     .nav-menu.active {
         display: flex; /* Shows the menu when active */
     }
@@ -737,6 +747,7 @@ body {
         grid-template-columns: 1fr; /* Single column layout */
         width: 80%; /* Ensures these sections also cover 80% */
         margin: 0 auto; /* Centers the sections */
+        margin-bottom: 10px;
     }
 
     .product-card,
